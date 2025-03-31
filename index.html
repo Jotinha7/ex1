@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciamento de Alunos - DevTech Academy</title>
+</head>
+<body>
+  <h1>Cadastro de Alunos</h1>
+  <form id="formAluno">
+    <label>Nome: <input type="text" id="nome" required></label><br>
+    <label>Idade: <input type="number" id="idade" required></label><br>
+    <label>Curso:
+      <select id="curso">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+    </label><br>
+    <label>Nota Final: <input type="number" id="notaFinal" required></label><br>
+    <button type="submit" id="btnCadastrar">Cadastrar</button>
+  </form>
+
+  <h2>Lista de Alunos</h2>
+  <table border="1" id="tabelaAlunos">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Curso</th>
+        <th>Nota Final</th>
+        <th>Aprovado?</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dados serão inseridos aqui -->
+    </tbody>
+  </table>
+
+  <h2>Relatórios</h2>
+  <button id="btnAprovados">Listar Aprovados</button>
+  <button id="btnMediaNotas">Média das Notas</button>
+  <button id="btnMediaIdades">Média das Idades</button>
+  <button id="btnOrdemAlfabetica">Alunos em Ordem Alfabética</button>
+  <button id="btnQtdPorCurso">Quantidade por Curso</button>
+
+  <div id="relatorio"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
